@@ -1,0 +1,75 @@
+{
+  "expo": {
+    "name": "G-Gym",
+    "slug": "gym",
+    "version": "1.2.6",
+    "jsEngine": "hermes",
+    "orientation": "portrait",
+    "icon": "./assets/GYM-icon.png",
+    "userInterfaceStyle": "light",
+    "packagerOpts": {
+      "minify": true
+    },
+    "splash": {
+      "image": "./assets/GYM-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "icon": "./assets/GYM-icon.png",
+      "bundleIdentifier": "com.g-gym.com",
+      "buildNumber": "9"
+    },
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/GYM-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.jeevansekhar.gym",
+      "versionCode": 7,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/GYM-icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+          "recordAudioAndroid": true
+        }
+      ],
+      [
+        "expo-updates",
+        {
+          "username": "jeevansekhar"
+        }
+      ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "75369b66-078c-4788-85a8-12a0cdd0d224"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/75369b66-078c-4788-85a8-12a0cdd0d224",
+      "enabled": true,
+      "fallbackToCacheTimeout": 0,
+      "checkAutomatically": "ON_LOAD"
+    }
+  }
+}

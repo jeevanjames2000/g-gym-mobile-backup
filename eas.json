@@ -1,0 +1,47 @@
+{
+  "build": {
+    "preview": {
+      "channel": "preview",
+      "android": {
+        "image": "latest",
+        "resourceClass": "medium"
+      },
+      "ios": {
+        "image": "latest",
+        "buildConfiguration": "Release",
+        "resourceClass": "medium"
+      }
+    },
+    "preview2": {
+      "android": {
+        "buildType": "apk",
+        "distribution": "internal"
+      },
+      "ios": {
+        "buildConfiguration": "Release",
+        "image": "latest",
+        "resourceClass": "medium"
+      },
+      "channel": "preview2"
+    },
+    "production": {
+      "channel": "production",
+      "android": {
+        "resourceClass": "medium"
+      },
+      "ios": {
+        "buildConfiguration": "Release",
+        "resourceClass": "medium"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "ios_developer@gitam.edu",
+        "ascAppId": "6670476298",
+        "appleTeamId": "5XLXV42GVV"
+      }
+    }
+  }
+}
